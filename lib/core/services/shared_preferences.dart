@@ -30,7 +30,7 @@ class SharedPrefServiceImp implements SharedPrefService {
     if (_prefs.containsKey(localValuesKey)) {
       var local = _prefs.getString(localValuesKey);
       Map<String, dynamic> decodedValues = json.decode(local!);
-      print(decodedValues);
+      // print(decodedValues);
       return decodedValues;
     } else {
       return {};
@@ -76,7 +76,7 @@ class SharedPrefServiceImp implements SharedPrefService {
   List<int> getFavorites() {
     List<String> favListStr = (_prefs.getStringList(localFavoritesKey) ?? []);
     List<int> favList = favListStr.map((i) => int.parse(i)).toList();
-    print(favList.toString());
+    // print(favList.toString());
     return favList;
   }
 
