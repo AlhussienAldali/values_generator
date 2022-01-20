@@ -12,7 +12,6 @@ class AppLauncher extends StatefulWidget {
 }
 
 class _AppLauncherState extends State<AppLauncher> {
-
   late AppLauncherBloc _appLauncherBloc;
 
   @override
@@ -30,10 +29,10 @@ class _AppLauncherState extends State<AppLauncher> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: BlocListener<AppLauncherBloc,AppLauncherState>(
+      body: BlocListener<AppLauncherBloc, AppLauncherState>(
         bloc: _appLauncherBloc,
         listener: (context, state) {
-          if(state is AppLauncherFinished) {
+          if (state is AppLauncherFinished) {
             Navigator.pushNamed(context, '/mainScreen');
           }
         },

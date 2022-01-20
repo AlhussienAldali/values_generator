@@ -1,3 +1,12 @@
 {
-  "hi": "welcome"
+  "hi": "welcome",
+  "main screen title": "NG values",
+  "Values": "Values",
+  "Favorites": "Favorites",
+  "add value text": "please ,add a value you admire",
+  "save": "save",
+  "new value": "You value is saved,It will appear every now and then",
+  "add another one": "add another one",
+  "your favorite values": "your favorite values",
+  "empty favorites": "you don't have any favorites,please click on the green hearts"
 }

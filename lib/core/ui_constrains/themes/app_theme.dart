@@ -64,6 +64,11 @@ TextStyle _bodyText1Style({required bool isDark}) => TextStyle(
       fontSize: Dimensions.BODY_BIG_TEXT_SIZE,
     );
 
+TextStyle _mainScreenTextStyle() => const TextStyle(
+    fontSize: Dimensions.MAIN_SCREEN_TEXT_SIZE,
+    fontFamily: "MochiyPopPOne",
+    fontWeight: FontWeight.w900);
+
 extension ThemeGetter on BuildContext {
   TextStyle? titleStyle() => Theme.of(this).textTheme.headline6;
 
@@ -74,6 +79,8 @@ extension ThemeGetter on BuildContext {
   TextStyle? bodyText1Style() => Theme.of(this).textTheme.bodyText1;
 
   TextStyle? bodyText2Style() => Theme.of(this).textTheme.bodyText2;
+
+  TextStyle? mainScreenTextStyle() => _mainScreenTextStyle();
 
   Color primaryColor() => Theme.of(this).primaryColor;
 
